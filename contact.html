@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Sweet Wheels Food Truck</title>
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8D%AD</text></svg>">
+  <meta name="description" content="Contact Sweet Wheels food truck. Book us for your event, party, or festival, ask about catering, or just say hi.">
+  <meta name="keywords" content="contact food truck, book food truck, cotton candy catering, funnel cake catering, event booking">
+  <link rel="canonical" href="https://sweetwheels.com/contact.html">
+  <script>
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <script src="tailwindcss.js"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="assets/css/google-fonts.css">
+  <style>
+    .error-message {
+      color: #ef4444;
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      display: none;
+    }
+    .error-message.visible {
+      display: block;
+    }
+    .form-input.error {
+      border-color: #ef4444;
+    }
+    .form-input.error:focus {
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+    }
+    .dark .form-input.error:focus {
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-pink-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+
+  <div id="navbar"></div>
+
+  <!-- Hero -->
+  <section class="relative min-h-[55vh] flex items-center overflow-hidden pt-16 bg-cover bg-center" style="background-image:url('assets/images/carnival.jpg');">
+    <div class="absolute inset-0 bg-gradient-to-br from-pink-700/85 via-fuchsia-800/80 to-purple-900/85 dark:from-pink-950/90 dark:via-fuchsia-950/85 dark:to-purple-950/90"></div>
+    <div class="absolute inset-0 bg-grid opacity-20"></div>
+    <div class="absolute top-20 left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl candy-float"></div>
+    <div class="absolute bottom-20 right-20 w-96 h-96 bg-yellow-300/15 rounded-full blur-3xl candy-float" style="animation-delay:2s;"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+      <div class="text-center" data-aos="fade-up">
+        <span class="inline-block px-4 py-2 bg-white/15 backdrop-blur-sm rounded-full text-white/90 text-sm font-bold uppercase tracking-wider mb-6">Contact Us</span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
+          Let's Make <span class="text-yellow-300">Sweet Music</span> Together
+        </h1>
+        <p class="text-lg sm:text-xl text-pink-50/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Booking a party, festival, school event, or corporate gathering? Have a question? Drop us a line — we usually reply within 24 hours.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#contact-form" class="inline-flex items-center px-8 py-4 bg-white text-pink-600 font-bold rounded-full shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            Send a Message
+            <svg class="w-5 h-5 ml-2 rtl:mr-2 rtl:ml-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <a href="tel:+15551234567" class="inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/40 font-bold rounded-full hover:bg-white/20 transition-all duration-300">
+            <i class="fas fa-phone mr-2 rtl:ml-2 rtl:mr-0"></i> Call Us Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section id="contact-form" class="py-20 lg:py-28 bg-white dark:bg-gray-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+        <span class="inline-block px-4 py-2 bg-pink-100 dark:bg-pink-900/40 text-pink-600 dark:text-pink-300 rounded-full text-sm font-bold uppercase tracking-wider mb-4">Get In Touch</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">We'd Love to Hear From You</h2>
+        <p class="text-gray-600 dark:text-gray-400 text-lg">Tell us about your event or question and we'll get right back to you.</p>
+      </div>
+      <div class="grid lg:grid-cols-5 gap-8 items-start">
+        <div class="lg:col-span-3" data-aos="fade-right">
+          <div class="glass-card rounded-2xl p-8 md:p-10">
+            <form id="contactForm" novalidate>
+              <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Full Name <span class="text-pink-500">*</span></label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 rtl:right-0 rtl:pr-4 rtl:left-auto flex items-center pointer-events-none text-gray-400">
+                      <i class="fas fa-user w-5 h-5"></i>
+                    </div>
+                    <input type="text" id="name" name="name" placeholder="Jane Doe"
+                      class="form-input w-full pl-12 pr-4 rtl:pr-12 rtl:pl-4 py-3.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-800 transition-all duration-200">
+                  </div>
+                  <div class="error-message" id="nameError">Please enter your full name.</div>
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address <span class="text-pink-500">*</span></label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 rtl:right-0 rtl:pr-4 rtl:left-auto flex items-center pointer-events-none text-gray-400">
+                      <i class="fas fa-envelope w-5 h-5"></i>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="jane@example.com"
+                      class="form-input w-full pl-12 pr-4 rtl:pr-12 rtl:pl-4 py-3.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-800 transition-all duration-200">
+                  </div>
+                  <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                </div>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Phone Number</label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 rtl:right-0 rtl:pr-4 rtl:left-auto flex items-center pointer-events-none text-gray-400">
+                      <i class="fas fa-phone w-5 h-5"></i>
+                    </div>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567"
+                      class="form-input w-full pl-12 pr-4 rtl:pr-12 rtl:pl-4 py-3.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-800 transition-all duration-200">
+                  </div>
+                  <div class="error-message" id="phoneError">Please enter a valid phone number.</div>
+                </div>
+                <div>
+                  <label for="eventType" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Event Type</label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 rtl:right-0 rtl:pr-4 rtl:left-auto flex items-center pointer-events-none text-gray-400">
+                      <i class="fas fa-calendar-check w-5 h-5"></i>
+                    </div>
+                    <select id="eventType" name="eventType"
+                      class="form-input w-full pl-12 pr-4 rtl:pr-12 rtl:pl-4 py-3.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white focus:border-pink-500 focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-800 transition-all duration-200 appearance-none">
+                      <option value="">Just a question</option>
+                      <option value="birthday">Birthday Party</option>
+                      <option value="wedding">Wedding / Reception</option>
+                      <option value="school">School Event</option>
+                      <option value="festival">Festival / Fair</option>
+                      <option value="corporate">Corporate Event</option>
+                      <option value="other">Other Event</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message <span class="text-pink-500">*</span></label>
+                <div class="relative">
+                  <div class="absolute top-4 left-4 rtl:right-4 rtl:left-auto pointer-events-none text-gray-400">
+                    <i class="fas fa-comment w-5 h-5"></i>
+                  </div>
+                  <textarea id="message" name="message" rows="5" placeholder="Tell us about your event or question..."
+                    class="form-input w-full pl-12 pr-4 rtl:pr-12 rtl:pl-4 py-3.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-800 transition-all duration-200 resize-none"></textarea>
+                </div>
+                <div class="error-message" id="messageError">Please enter your message.</div>
+              </div>
+              <button type="submit" id="submitBtn" class="btn-primary w-full px-8 py-4 text-white font-bold rounded-xl text-lg flex items-center justify-center gap-3">
+                <i class="fas fa-paper-plane w-5 h-5"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Side Info -->
+        <div class="lg:col-span-2 space-y-6" data-aos="fade-left">
+          <div class="glass-card rounded-2xl p-6 card-hover">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-fuchsia-400 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-map-marker-alt w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Where to Find Us</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                  On the road! Check our <a href="locations.html" class="text-pink-600 dark:text-pink-400 font-semibold hover:underline">locations &amp; events</a><br>
+                  page for the weekly schedule.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card rounded-2xl p-6 card-hover">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-fuchsia-500 to-purple-400 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-phone w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Phone</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                  <a href="tel:+15551234567" class="hover:text-pink-500 transition-colors">+1 (555) 123-4567</a><br>
+                  <a href="tel:+15559876543" class="hover:text-pink-500 transition-colors">+1 (555) 987-6543</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card rounded-2xl p-6 card-hover">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-envelope w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Email</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                  <a href="mailto:hello@sweetwheels.com" class="hover:text-pink-500 transition-colors">hello@sweetwheels.com</a><br>
+                  <a href="mailto:bookings@sweetwheels.com" class="hover:text-pink-500 transition-colors">bookings@sweetwheels.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card rounded-2xl p-6 card-hover">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-clock w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Typical Open Hours</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                  Fri – Sun &amp; event days: 12 PM – 8 PM<br>
+                  Mon – Thu: private bookings
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UK Location / Map -->
+  <section class="py-20 lg:py-28 bg-gray-50 dark:bg-gray-900" id="location">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14" data-aos="fade-up">
+        <span class="inline-block px-4 py-2 bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-300 rounded-full text-sm font-bold uppercase tracking-wider mb-4">Find Us in the UK</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Our UK Location</h2>
+        <p class="text-gray-600 dark:text-gray-400 text-lg">Sweet Wheels is touring the UK! Check the map for our base stop, then follow us on socials for live updates.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-8 items-stretch" data-aos="fade-up">
+        <div class="lg:col-span-1 space-y-6">
+          <div class="glass-card rounded-2xl p-6 card-hover">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-fuchsia-400 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-map-pin w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Home Base</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                  The Sweet Wheels weekly pitch<br>
+                  Old Market Square, Nottingham, UK
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card rounded-2xl p-6 card-hover">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-fuchsia-500 to-purple-400 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-clock w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">When We're There</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                  Every Saturday &amp; Sunday<br>
+                  11 AM – 6 PM
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card rounded-2xl p-6 card-hover">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-route w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Rolling Across the UK</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                  We also tour festivals and markets in London, Manchester, Birmingham &amp; more. See <a href="locations.html" class="text-purple-600 dark:text-purple-400 font-semibold hover:underline">locations &amp; events</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-2 glass-card rounded-2xl overflow-hidden shadow-2xl">
+          <iframe
+            src="https://www.google.com/maps?q=Old%20Market%20Square%2C%20Nottingham%2C%20UK&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-[460px] border-0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Sweet Wheels UK location map"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 lg:py-28 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600"></div>
+    <div class="absolute inset-0 bg-dots opacity-30"></div>
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+      <span class="text-6xl mb-6 block candy-float" aria-hidden="true">🎉</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Planning a Big Event?</h2>
+      <p class="text-xl text-pink-50/90 mb-10 max-w-2xl mx-auto">Check our catering packages and reserve your date before the calendar fills up.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="menu.html#catering" class="inline-flex items-center px-8 py-4 bg-white text-pink-600 font-bold rounded-full shadow-2xl hover:-translate-y-1 transition-all duration-300">
+          View Catering Packages
+          <svg class="w-5 h-5 ml-2 rtl:mr-2 rtl:ml-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/darkmode.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    (function () {
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+      const fields = {
+        name: { el: document.getElementById('name'), error: document.getElementById('nameError'), valid: v => v.trim().length > 1 },
+        email: { el: document.getElementById('email'), error: document.getElementById('emailError'), valid: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
+        phone: { el: document.getElementById('phone'), error: document.getElementById('phoneError'), valid: v => v.trim() === '' || /^[+\d][\d\s\-().]{6,}$/.test(v.trim()) },
+        message: { el: document.getElementById('message'), error: document.getElementById('messageError'), valid: v => v.trim().length > 5 }
+      };
+      function validateField(key) {
+        const f = fields[key];
+        const ok = f.valid(f.el.value);
+        f.el.classList.toggle('error', !ok);
+        if (f.error) f.error.classList.toggle('visible', !ok);
+        return ok;
+      }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let allOk = true;
+        Object.keys(fields).forEach(k => { if (!validateField(k)) allOk = false; });
+        if (!allOk) return;
+        form.reset();
+        Object.keys(fields).forEach(k => fields[k].el.classList.remove('error'));
+        if (window.showToast) {
+          window.showToast('Message sent! We\'ll get back to you within 24 hours.', 'success');
+        } else {
+          alert('Thanks! Your message has been sent. We\'ll be in touch soon.');
+        }
+      });
+      Object.keys(fields).forEach(k => {
+        fields[k].el.addEventListener('blur', () => validateField(k));
+        fields[k].el.addEventListener('input', () => validateField(k));
+      });
+    })();
+  </script>
+</body>
+</html>

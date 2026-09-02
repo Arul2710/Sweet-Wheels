@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | Sweet Wheels Rewards</title>
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8D%AD</text></svg>">
+  <meta name="description" content="Your Sweet Wheels rewards dashboard — track sweet points, order history, and saved favorite treats.">
+  <meta name="keywords" content="sweet rewards, cotton candy rewards, food truck account, funnel cake rewards">
+  <link rel="canonical" href="https://sweetwheels.com/dashboard.html">
+  <script>
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <script src="tailwindcss.js"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="assets/css/google-fonts.css">
+</head>
+<body class="bg-pink-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+
+  <div id="navbar"></div>
+
+  <!-- Hero -->
+  <section class="relative min-h-[35vh] flex items-center overflow-hidden pt-16 bg-gradient-to-br from-pink-500 via-fuchsia-500 to-purple-600 dark:from-pink-950 dark:via-fuchsia-950 dark:to-purple-950">
+    <div class="absolute inset-0 bg-grid opacity-20"></div>
+    <div class="absolute top-16 right-16 w-72 h-72 bg-white/10 rounded-full blur-3xl candy-float"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+      <div class="flex flex-wrap items-center justify-between gap-8" data-aos="fade-up">
+        <div>
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/15 backdrop-blur-sm rounded-full text-white/90 text-sm font-bold uppercase tracking-wider mb-5"><i class="fas fa-gift mr-1 rtl:ml-1 rtl:mr-0"></i>Sweet Rewards</span>
+          <h1 id="welcomeMessage" class="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">Welcome back!</h1>
+          <p class="text-pink-50/90 mt-3 max-w-xl">Every cone and cake earns points toward free treats. Here's where your sweetness stands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-14 lg:py-16 bg-white dark:bg-gray-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up">
+        <div class="glass-card rounded-2xl p-6 card-hover text-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-fuchsia-400 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg"><i class="fas fa-star w-6 h-6 text-white"></i></div>
+          <div id="pointsTotal" class="text-3xl font-bold gradient-text">0</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">Sweet Points</div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 card-hover text-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-fuchsia-500 to-purple-400 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg"><i class="fas fa-candy-cane w-6 h-6 text-white"></i></div>
+          <div id="treatsBought" class="text-3xl font-bold gradient-text">0</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">Treats Enjoyed</div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 card-hover text-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-400 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg"><i class="fas fa-truck w-6 h-6 text-white"></i></div>
+          <div id="tierName" class="text-3xl font-bold gradient-text">Member</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">Rewards Tier</div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 card-hover text-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg"><i class="fas fa-heart w-6 h-6 text-white"></i></div>
+          <div id="favoritesCount" class="text-3xl font-bold gradient-text">0</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">Favorite Treats</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rewards progress + Order history -->
+  <section class="py-14 lg:py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+        <span class="inline-block px-4 py-2 bg-pink-100 dark:bg-pink-900/40 text-pink-600 dark:text-pink-300 rounded-full text-sm font-bold uppercase tracking-wider mb-4">Rewards</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Next Free Cone in Reach!</h2>
+        <p class="text-gray-600 dark:text-gray-400">Earn 50 points for a free classic cone. Order history below.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-8 items-start">
+        <div class="lg:col-span-2" data-aos="fade-right">
+          <div class="glass-card rounded-2xl p-8">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2"><i class="fas fa-chart-simple text-pink-500"></i> Progress to Free Treat</h3>
+            <div id="progressBarContainer" class="mb-3">
+              <div class="h-4 w-full bg-pink-100 dark:bg-pink-900/40 rounded-full overflow-hidden">
+                <div id="progressBarFill" class="h-full rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500 transition-all duration-700" style="width:0%"></div>
+              </div>
+            </div>
+            <p id="progressText" class="text-sm text-gray-600 dark:text-gray-400 mb-6"></p>
+            <a href="menu.html" class="inline-flex items-center px-6 py-3 btn-primary font-bold rounded-full shadow-lg">
+              Grab a Treat
+              <svg class="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3" data-aos="fade-left">
+          <div class="glass-card rounded-2xl p-8">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2"><i class="fas fa-clock-rotate-left text-fuchsia-500"></i> Recent Orders</h3>
+            <div id="ordersContainer" class="space-y-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Saved favorites -->
+  <section class="py-14 lg:py-16 bg-white dark:bg-gray-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+        <span class="inline-block px-4 py-2 bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-300 rounded-full text-sm font-bold uppercase tracking-wider mb-4">Favorites</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Your Go-To Orders</h2>
+        <p class="text-gray-600 dark:text-gray-400">One tap at the truck and your favorite is on the way.</p>
+      </div>
+      <div id="favoritesContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Profile card -->
+  <section class="py-14 lg:py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="profileContainer" class="max-w-md mx-auto"></div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/darkmode.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</body>
+</html>
