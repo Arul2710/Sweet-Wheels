@@ -66,7 +66,7 @@ class Navbar {
               </div>
               <span class="flex flex-col leading-tight">
                 <span class="text-base md:text-lg lg:text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent whitespace-nowrap">Sweet Wheels</span>
-                </span>
+              </span>
             </a>
 
             <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse" id="desktopNav" role="menubar">

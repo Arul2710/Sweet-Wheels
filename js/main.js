@@ -56,8 +56,8 @@ function showToast(message, type = 'success') {
   const colors = {
     success: 'bg-pink-500',
     error: 'bg-purple-600',
-    warning: 'bg-yellow-500',
-    info: 'bg-cyan-500'
+    warning: 'bg-pink-700',
+    info: 'bg-purple-500'
   };
 
   const toast = document.createElement('div');

@@ -28,8 +28,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-          <div class="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full flex items-center justify-center shadow-md">
-            <span class="text-xl" aria-hidden="true">🍭</span>
+          <div class="relative w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full flex items-center justify-center shadow-md">
+            <span class="text-xl leading-none" aria-hidden="true">&#127853;</span>
+            <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center text-[11px] shadow-sm" aria-hidden="true">&#128666;</span>
           </div>
           <span class="text-lg font-bold gradient-text">Sweet Wheels</span>
         </a>
@@ -38,7 +39,7 @@
             <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
             <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
           </button>
-          <button id="ltrToggle" class="relative w-[68px] h-7 rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-blue-500" aria-label="Switch to RTL" title="Switch to RTL">
+          <button id="ltrToggle" class="relative w-[68px] h-7 rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-pink-500" aria-label="Switch to RTL" title="Switch to RTL">
             <span class="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-700"></span>
             <span id="ltrToggleTrack" class="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 transition-opacity duration-300"></span>
             <span class="relative flex items-center justify-between px-2.5 h-full text-[10px] font-bold uppercase leading-none tracking-wide">
@@ -56,14 +57,11 @@
   <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
     <div class="absolute inset-0 bg-gradient-to-br from-pink-100 via-white to-purple-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"></div>
     <div class="absolute inset-0 bg-grid opacity-30 dark:opacity-10"></div>
-    <div class="absolute top-20 -left-20 w-80 h-80 bg-pink-200/40 dark:bg-pink-800/20 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-purple-200/40 dark:bg-purple-800/20 rounded-full blur-3xl"></div>
 
     <div class="relative w-full max-w-md mx-auto px-4 py-8" data-aos="fade-up" data-aos-duration="800">
       <div class="glass-card rounded-3xl p-8 sm:p-10 shadow-2xl">
 
         <div class="text-center mb-8">
-          <span class="text-5xl block mb-4 candy-float" aria-hidden="true">🍭</span>
           <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2">Welcome Back!</h1>
           <p class="text-gray-600 dark:text-gray-400 text-sm">Login to track your Sweet Wheels rewards, favorite treats, and bookings.</p>
         </div>
